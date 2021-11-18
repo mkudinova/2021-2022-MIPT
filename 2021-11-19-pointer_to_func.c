@@ -28,10 +28,10 @@ int comp(int * a, int * b){
 }
 
 int main(){
-	int n;
+	int i, n;
 	scanf("%d", &n);
 	int *q = (int *)malloc(sizeof(int) * n);
-	for(int i = n-1; i >= 0; i--)
+	for(i = 0; i < n; i++)
 		q[i] = i;
 
 	// qsort
@@ -44,7 +44,7 @@ int main(){
 	// с 2мя аргументами - указателями, и возвращаемым значением типа int
 	// см. man 3 qsort
 
-	for(int i = n-1; i >= 0; i--)
+	for(i = 0; i < n; i++)
 		printf("%d", q[i]);
 	free(q);
 	return 0;
