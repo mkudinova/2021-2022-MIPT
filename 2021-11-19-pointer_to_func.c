@@ -45,7 +45,7 @@ int main(){
 	// см. man 3 qsort
 
 	for(i = 0; i < n; i++)
-		printf("%d", q[i]);
+		printf("%d ", q[i]);
 	free(q);
 	return 0;
 }
